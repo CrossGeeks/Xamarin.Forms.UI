@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="UISampleApp.Views.SignUps.SignUpDaniaPage" 
+             xmlns:local="clr-namespace:UISampleApp.Controls"
+             BackgroundColor="#2f4259">
+      <ContentPage.Resources>
+         <ResourceDictionary>
+            <Color x:Key="primary">#3ec3d5</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="40" Spacing="10">
+                 <Label  HorizontalOptions="CenterAndExpand" 
+                              Text="UiApp" 
+                              TextColor="White" 
+                              FontSize="40" />
+                <local:ImageEntry TextColor="White" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user"
+                        Placeholder="Name" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user" 
+                        Placeholder="LastName" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White"
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="email" 
+                        Placeholder="Emil" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White"  
+                        PlaceholderColor="{StaticResource primary}"  
+                        Image="password" 
+                        Placeholder="Password" 
+                        HorizontalOptions="FillAndExpand"/>
+
+                <Button TextColor="White" 
+                         Text="Register"  
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand"/>
+
+                 <Label Text="I have an account" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}"/>
+             </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

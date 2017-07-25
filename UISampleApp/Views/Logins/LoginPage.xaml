@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="UISampleApp.Logins.LoginPage"
+             xmlns:local="clr-namespace:UISampleApp.Effects">
+    <ContentPage.Resources>
+         <ResourceDictionary>
+            <Color x:Key="primary">#ff3467</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+	<ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" >
+                  
+                   <Label HeightRequest="110"  
+                          HorizontalOptions="FillAndExpand" 
+                          Text="UiApp" 
+                          BackgroundColor="{StaticResource primary}"
+                          TextColor="White" 
+                          FontSize="40" 
+                          HorizontalTextAlignment="Center"
+                          VerticalTextAlignment="Center"/>
+                
+                 <Entry  Margin="20,40,20,0" 
+                         HeightRequest="50" 
+                         Placeholder="Email">
+                    <Entry.Effects>
+                        <local:BackgroundEntryEffect />
+                    </Entry.Effects>
+                 </Entry>
+                
+                 <Entry Margin="20,0,20,0" 
+                        HeightRequest="50" IsPassword="true"
+                        Placeholder="Password">
+                    <Entry.Effects>
+                        <local:BackgroundEntryEffect />
+                    </Entry.Effects>
+                 </Entry>
+                
+                 <Button Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand"/>
+                
+                 <Button Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Register"  Clicked="Handle_Clicked"
+                         BackgroundColor="Gray"
+                         HorizontalOptions="FillAndExpand"/>
+
+                <Label Text="Forgot password" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}"/>
+            </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

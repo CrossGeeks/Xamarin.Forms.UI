@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{8C4C4B93-75B6-4CD7-B99A-6CD0F4AB5085}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 5.0.1.1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Chard/Xamarin.Forms.UI/UISampleApp/Views/Logins/LoginPage.xaml.cs" relfile="UISampleApp/Views/Logins/LoginPage.xaml.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UISampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.730DD60D-7582-4688-9109-1675880138D9" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.UISampleApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>
