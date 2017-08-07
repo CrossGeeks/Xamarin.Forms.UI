@@ -8,9 +8,13 @@ namespace UISampleApp.Logins
 {
     public partial class LoginPage : ContentPage
     {
+
         public LoginPage()
         {
             InitializeComponent();
+
+
+
         }
 
         async void Handle_Clicked(object sender, System.EventArgs e)

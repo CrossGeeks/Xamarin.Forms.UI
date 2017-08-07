@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using UISampleApp.Views.SignUps;
 using Xamarin.Forms;
 
 namespace UISampleApp.Views.Logins
@@ -11,5 +11,10 @@ namespace UISampleApp.Views.Logins
         {
             InitializeComponent();
         }
+
+		async void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushModalAsync(new SignUpDaniaPage());
+		}
     }
 }

@@ -17,13 +17,11 @@
                               FontSize="40" />
                 
                 <local:ImageEntry TextColor="White" 
-                        HeightRequest="50" 
                         PlaceholderColor="{StaticResource primary}" 
                         Image="user" 
-                        Placeholder="Emil" 
+                        Placeholder="Email" 
                         HorizontalOptions="FillAndExpand"/>
                 <local:ImageEntry TextColor="White" 
-                    HeightRequest="50" 
                     PlaceholderColor="{StaticResource primary}"  
                     Image="password" 
                     Placeholder="Password" 
@@ -41,7 +39,13 @@
                 
                  <Label Margin="0,0,0,20" Text="I don't have an account" VerticalOptions="EndAndExpand"
                         HorizontalOptions="Center" 
-                        TextColor="{StaticResource primary}"/>
+                        TextColor="{StaticResource primary}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="Handle_Clicked"
+                                    NumberOfTapsRequired="1" />
+                      </Label.GestureRecognizers>
+                  </Label>
              </StackLayout>
         </ScrollView>
 	</ContentPage.Content>

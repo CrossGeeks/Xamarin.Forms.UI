@@ -29,7 +29,7 @@
                 <local:ImageEntry TextColor="White"
                         PlaceholderColor="{StaticResource primary}" 
                         Image="email" 
-                        Placeholder="Emil" 
+                        Placeholder="Email" 
                         HorizontalOptions="FillAndExpand"/>
                 <local:ImageEntry TextColor="White"  
                         PlaceholderColor="{StaticResource primary}"  
